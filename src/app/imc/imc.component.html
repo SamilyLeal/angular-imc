@@ -9,5 +9,6 @@
         </label>
     </div>
     <button (click)="calcular()">Calcular</button>
-    <p *ngIf="resultado > 0">Seu IMC é de {{ resultado.toFixed(2) }}</p>
+    <span *ngIf="resultado > 0">Seu IMC é de {{ resultado.toFixed(2) }}</span>
+    <span *ngIf="classificacao != ''">Classificação: {{ classificacao }}</span>
 </div>
