@@ -1,0 +1,13 @@
+<div>
+    <h1>Calculo de IMC</h1>
+    <div class="box">
+        <label>Peso:
+            <input type="number" [(ngModel)]="peso">
+        </label>
+        <label>Altura:
+            <input type="number" [(ngModel)]="altura">
+        </label>
+    </div>
+    <button (click)="calcular()">Calcular</button>
+    <p *ngIf="resultado > 0">Seu IMC é de {{ resultado.toFixed(2) }}</p>
+</div>
